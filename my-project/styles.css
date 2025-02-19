@@ -149,7 +149,7 @@ h1, h2 {
     text-align: justify;
     margin: 40px auto;
     padding: 20px;
-    max-width: 900px;
+    max-width: 11   00px;
     color: #333;
 }
 
@@ -559,14 +559,67 @@ ul li .value-description {
     object-fit: cover; /* Сохраняем пропорции изображения и заполняем весь экран */
 }
   
-.video-container {
-    text-align: center;
+.content-container {
+    display: flex;
+    justify-content: center; /* Центрирование содержимого */
+    align-items: center;
     margin-top: 50px;
+    gap: 50px; /* Отступ между блоками */
+}
+
+.articles-container {
+    width: 40%;
+    text-align: left;
+    margin-left: 180px; /* Сдвиг блока правее */
+    margin-bottom: 20px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    background-color: #1f4a7c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    border-radius: 0; /* Убираем закругления */
+}
+
+.details-button {
+    background-color: white;
+    color: #1f4a7c;
+    border: 1px solid #1f4a7c;
+    padding: 10px;
+    width: 25%;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #e0e0e0; /* Серый фон при наведении */
+    color: #1f4a7c; /* Оставляем текст синим */
+    border: 1px solid #1f4a7c;
+}
+
+
+.video-container {
+    width: 55%;
+    text-align: center;
+    margin-bottom: 45px;
 }
 
 .vidos {
+    width: 100%;
+    max-width: 640px;
     margin-top: 20px;
 }
+
+
   
 footer {
     background-color: #005a99; /* Синий фон */
